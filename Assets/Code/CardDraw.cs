@@ -20,10 +20,10 @@ public class CardDraw : MonoBehaviour
         _game = GameObject.Find("Game").GetComponent<Game>();
         for (int i = 0; i < _gameSettings.CountPlayer; i++)
         {
-            for (int j = 0; j < _game.players[i].cards.Count; j++)
+            foreach (var t in _game.players[i].cards)
             {
                 GameObject newCard = Instantiate(_cardPref, _hands[i].transform);
-                newCard.GetComponent<Image>().sprite = _gameSettings.Deck[_game.players[i].cards[j]].Image;
+                newCard.GetComponent<Image>().sprite = _gameSettings.Deck[t].Image;
             }
         }
     }
