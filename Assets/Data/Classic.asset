@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5624b35ec10dc5489e370284c3b70ca, type: 3}
+  m_Name: Classic
+  m_EditorClassIdentifier: 
+  _turnTime: 10
+  _countPlayer: 3
+  _deck:
+  - _id: 1
+    _weight: 6
+    _name: "6 \u0411\u0443\u0431\u0438"
+    _image: {fileID: -818419323, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 2
+    _weight: 6
+    _name: "6 \u0412\u0438\u043D\u0438"
+    _image: {fileID: -1335753491, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 3
+    _weight: 6
+    _name: "6 \u041A\u0440\u0435\u0441\u0442\u0438"
+    _image: {fileID: -1703390016, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 4
+    _weight: 6
+    _name: "6 \u0427\u0435\u0440\u0432\u0438"
+    _image: {fileID: -1998842605, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 5
+    _weight: 10
+    _name: "10 \u0411\u0443\u0431\u0438"
+    _image: {fileID: -428959767, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 6
+    _weight: 10
+    _name: "10 \u0412\u0438\u043D\u0438"
+    _image: {fileID: -790044528, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 7
+    _weight: 10
+    _name: "10 \u041A\u0440\u0435\u0441\u0442\u0438"
+    _image: {fileID: 1262696214, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 8
+    _weight: 10
+    _name: "10 \u0427\u0435\u0440\u0432\u0438"
+    _image: {fileID: 849264828, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 9
+    _weight: 11
+    _name: "\u0412\u0430\u043B\u0435\u0442 \u0411\u0443\u0431\u0438"
+    _image: {fileID: 37367525, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 10
+    _weight: 11
+    _name: "\u0412\u0430\u043B\u0435\u0442 \u0412\u0438\u043D\u0438"
+    _image: {fileID: 1966849414, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 11
+    _weight: 11
+    _name: "\u0412\u0430\u043B\u0435\u0442 \u0427\u0435\u0440\u0432\u0438"
+    _image: {fileID: -2083761393, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 12
+    _weight: 11
+    _name: "\u0412\u0430\u043B\u0435\u0442 \u041A\u0440\u0435\u0441\u0442\u0438"
+    _image: {fileID: 95649771, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 13
+    _weight: 12
+    _name: "\u0414\u0430\u043C\u0430 \u0411\u0443\u0431\u0438"
+    _image: {fileID: -243899576, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 14
+    _weight: 12
+    _name: "\u0414\u0430\u043C\u0430 \u0412\u0438\u043D\u0438"
+    _image: {fileID: -1948337345, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 15
+    _weight: 12
+    _name: "\u0414\u0430\u043C\u0430 \u0412\u0438\u043D\u0438"
+    _image: {fileID: -1948337345, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 16
+    _weight: 12
+    _name: "\u0414\u0430\u043C\u0430 \u041A\u0440\u0435\u0441\u0442\u0438"
+    _image: {fileID: 739526433, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 17
+    _weight: 13
+    _name: "\u041A\u043E\u0440\u043E\u043B\u044C \u0411\u0443\u0431\u0438"
+    _image: {fileID: -292251487, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 18
+    _weight: 13
+    _name: "\u041A\u043E\u0440\u043E\u043B\u044C \u0412\u0438\u043D\u0438"
+    _image: {fileID: 737045390, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 19
+    _weight: 13
+    _name: "\u041A\u043E\u0440\u043E\u043B\u044C \u041A\u0440\u0435\u0441\u0442\u0438"
+    _image: {fileID: -643093805, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 20
+    _weight: 13
+    _name: "\u041A\u043E\u0440\u043E\u043B\u044C \u0427\u0435\u0440\u0432\u0438"
+    _image: {fileID: -466230324, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 21
+    _weight: 14
+    _name: "\u0422\u0443\u0437 \u0411\u0443\u0431\u0438"
+    _image: {fileID: -2118387454, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 22
+    _weight: 14
+    _name: "\u0422\u0443\u0437 \u0412\u0438\u043D\u0438"
+    _image: {fileID: 1364595326, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 23
+    _weight: 14
+    _name: "\u0422\u0443\u0437 \u041A\u0440\u0435\u0441\u0442\u0438"
+    _image: {fileID: -2064378153, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+  - _id: 24
+    _weight: 14
+    _name: "\u0422\u0443\u0437 \u0427\u0435\u0440\u0432\u0438"
+    _image: {fileID: 1045842451, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
