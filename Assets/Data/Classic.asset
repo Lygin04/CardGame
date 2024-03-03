@@ -74,7 +74,7 @@ MonoBehaviour:
   - _id: 15
     _weight: 12
     _name: "\u0414\u0430\u043C\u0430 \u0412\u0438\u043D\u0438"
-    _image: {fileID: -1948337345, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
+    _image: {fileID: 618939116, guid: cc418afe885313d42ba65e1b2e1bb540, type: 3}
   - _id: 16
     _weight: 12
     _name: "\u0414\u0430\u043C\u0430 \u041A\u0440\u0435\u0441\u0442\u0438"
