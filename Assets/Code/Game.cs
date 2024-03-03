@@ -8,8 +8,9 @@ public class Game : MonoBehaviour
     [SerializeField] private GameSettings _gameSettings;
 
     private const int COUNT_CARDS = 24;
+    
     private List<int> deck;
-    public List<Player> players;
+    public List<Player> players = new List<Player>();
 
     private int indexPlayer = -1;
     private bool isEnd;
@@ -59,11 +60,14 @@ public class Game : MonoBehaviour
         int countHip = 0;
         foreach (var player in players)
         {
-            if (player.isHip) countHip++;
-            if (countHip == _gameSettings.CountPlayer - 1) isEnd = true;
+            if (player.isHip) 
+                countHip++;
+            if (countHip == _gameSettings.CountPlayer - 1) 
+                isEnd = true;
         }
         
-        if (indexPlayer == _gameSettings.CountPlayer) indexPlayer = 0;
+        if (indexPlayer == _gameSettings.CountPlayer) 
+            indexPlayer = 0;
         Debug.Log(indexPlayer);
     }
 
