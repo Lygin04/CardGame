@@ -96,10 +96,10 @@ public class Game : MonoBehaviour
         deck.Add(Random.Range(1, count + 1));
         for (int i = 0; i < count - 1; i++)
         {
-            int newValue = Random.Range(1, count + 1);
+            int newValue = Random.Range(0, count );
             while (deck.Exists(item => item == newValue))
             {
-                newValue = Random.Range(1, count + 1);
+                newValue = Random.Range(0, count);
             }
 
             deck.Add(newValue);
