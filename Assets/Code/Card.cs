@@ -10,6 +10,7 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     private Vector3 offeet;
 
     public Transform defaultParent, defaultTempCardParent;
+    public int countPlayer;
 
     private GameObject tempCardGO;
     
@@ -21,6 +22,9 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if(countPlayer != 0)
+            return;
+
         offeet = transform.position - camera.ScreenToWorldPoint(eventData.position);
 
         defaultParent = defaultTempCardParent = transform.parent;
@@ -33,6 +37,9 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 
     public void OnDrag(PointerEventData eventData)
     {
+        if(countPlayer != 0)
+            return;
+
         Vector3 newPos = camera.ScreenToWorldPoint(eventData.position);
         transform.position = newPos + offeet; 
         
@@ -44,6 +51,9 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if(countPlayer != 0)
+            return;
+
         transform.SetParent(defaultParent);
         GetComponent<CanvasGroup>().blocksRaycasts = true;
 

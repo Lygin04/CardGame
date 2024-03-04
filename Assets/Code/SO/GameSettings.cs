@@ -6,10 +6,12 @@ public class GameSettings : ScriptableObject
 {
     [SerializeField] private int _turnTime;
     [SerializeField] private int _countPlayer;
+    [SerializeField] private Sprite _backSpriteCard;
 
     public int TurnTime => _turnTime;
     public int CountPlayer => _countPlayer;
-    
+    public Sprite BackSpriteCard => _backSpriteCard;
+
     [Serializable]
     public class Card
     {

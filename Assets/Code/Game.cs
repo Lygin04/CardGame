@@ -11,10 +11,11 @@ public class Game : MonoBehaviour
     
     private List<int> deck;
     public List<Player> players = new List<Player>();
+    public int indexCard;
 
-    private int indexPlayer = -1;
+    public int indexPlayer = -1;
     private bool isEnd;
-    private DateTime timer;
+    public DateTime timer { get; private set; }
 
     public static Game Instance;
     
@@ -26,6 +27,9 @@ public class Game : MonoBehaviour
         Instance = this;
         
         deck = randomDeck(COUNT_CARDS);
+
+        indexCard = deck[0];
+        deck.RemoveAt(0);
 
         for (int i = 0; i < _gameSettings.CountPlayer; i++)
         {
